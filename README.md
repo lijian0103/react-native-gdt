@@ -3,11 +3,11 @@
 
 ## Getting started
 
-`$ npm install react-native-gdt --save`
+`$ npm install react-native-gdt-ad --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-gdt`
+`$ react-native link react-native-gdt-ad`
 
 ### Manual installation
 
