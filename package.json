@@ -1,0 +1,25 @@
+{
+  "name": "react-native-gdt",
+  "version": "1.0.0",
+  "description": "Tencent AD, 腾讯广点通/优量汇SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "gdt",
+    "ad",
+    "react"
+  ],
+  "author": {
+    "name": "lijian",
+    "email": "lijian0103@hotmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.5.1",
+    "react-native": "^0.57.2"
+  }
+}
