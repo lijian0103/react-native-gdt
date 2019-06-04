@@ -99,3 +99,5 @@ import GDT from 'react-native-gdt-ad';
     <Text style={{color: 'black', fontSize: 12,}}>HYBRID广告</Text>
 </TouchableOpacity>
 ```
+## License
+MIT
