@@ -24,7 +24,7 @@
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-gdt')
+      implementation project(':react-native-gdt')
   	```
 
 
