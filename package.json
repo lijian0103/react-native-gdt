@@ -1,6 +1,6 @@
 {
   "name": "react-native-gdt-ad",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tencent AD, 腾讯广点通/优量汇SDK",
   "main": "index.js",
   "scripts": {
