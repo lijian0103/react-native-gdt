@@ -29,10 +29,73 @@
 
 
 ## Usage
+1. Splash 广告示例
 ```javascript
-import GDT from 'react-native-gdt';
+import GDT from 'react-native-gdt-ad';
 
-// TODO: What to do with the module?
-GDT;
+<GDT.Splash style={{flex: 1}}
+   onFailToReceived={(error) => {
+       console.log(error);
+   }}
+   onNextAction={() => {
+       //下一步路由动作
+   }}
+   showLogo={true}
+   appInfo={{appId: '1101152570', posId: '8863364436303842593'}}
+   fetchDelay={4000}
+/>
 ```
-  
+2. Banner 广告示例
+```javascript
+<GDT.Banner style={{height: 64}}
+   onReceived={() => {
+   }}
+   onViewWillExposure={() => {
+   }}
+   onFailToReceived={(err) => console.log(err)}
+   showCloseBtn={false}
+   appInfo={{appId: '1101152570', posId: '9079537218417626401'}}
+/>
+```
+3. Banner2.0 广告示例
+```javascript
+<GDT.UnifiedBanner style={{height: 66}}
+   onReceived={() => {
+   }}
+   onViewWillExposure={() => {
+   }}
+   onFailToReceived={(err) => console.log(err)}
+   interval={50}
+   appInfo={{appId: '1101152570', posId: '4080052898050840'}}
+ />
+```
+4. 插屏 广告示例
+```javascript
+<TouchableOpacity
+    activeOpacity={0.9}
+    onPress={() => {
+        GDT.Module.showInterstitialAD('1101152570', '8575134060152130849', true);
+    }}>
+    <Text style={{color: 'black', fontSize: 12,}}>插屏广告</Text>
+</TouchableOpacity>
+```
+5. 插屏2.0 广告示例
+```javascript
+<TouchableOpacity
+    activeOpacity={0.9}
+    onPress={() => {
+        GDT.Module.showUnifiedInterstitialAD('1101152570', '3040652898151811', true);
+    }}>
+    <Text style={{color: 'black', fontSize: 12,}}>插屏2.0广告</Text>
+</TouchableOpacity>
+```
+6.  HYBRID广告示例
+```javascript
+<TouchableOpacity
+    activeOpacity={0.9}
+    onPress={() => {
+        GDT.Module.showUnifiedInterstitialAD('1101152570', '3040652898151811', true);
+    }}>
+    <Text style={{color: 'black', fontSize: 12,}}>HYBRID广告</Text>
+</TouchableOpacity>
+```
