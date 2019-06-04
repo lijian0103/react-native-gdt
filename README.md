@@ -94,7 +94,7 @@ import GDT from 'react-native-gdt-ad';
 <TouchableOpacity
     activeOpacity={0.9}
     onPress={() => {
-        GDT.Module.openWeb('1101152570', 'http://m.f139.com', {title: '测试标题', titleBarHeight: 45, titleSize: 20, titleColor: '#ff0000ff'});
+        GDT.Module.openWeb('1101152570', 'http://m.baidu.com', {title: '测试标题', titleBarHeight: 45, titleSize: 20, titleColor: '#ff0000ff'});
     }}>
     <Text style={{color: 'black', fontSize: 12,}}>HYBRID广告</Text>
 </TouchableOpacity>
